@@ -1,0 +1,191 @@
+body{
+
+    font-family: cursive;
+    
+    background-color: rgb(207, 194, 241);
+    }
+    
+    table tr td{
+        vertical-align: middle;
+    }
+    thead{
+        background: linear-gradient(135deg,#df07f3b0, #07f3e7bd);
+        color: #fff;
+        border:black;
+        
+    }
+    /*Tabla de empleados*/
+    tbody{
+        background: rgb(207, 194, 241);
+        color: #fff;
+        border: black;
+    }
+    tr{
+        color: #202020;
+    }
+    
+    
+    td button{
+        margin: 5px;
+    }
+    
+    td button i{
+        font-size: 20px;
+    }
+    .col-12{
+        margin: 0;
+    }
+    /*Boton de Nuevo Usuario*/
+    .btn1, .btnVolver, .btnCerrar, .btnCliente, .btnEmpleados {
+        background: linear-gradient(135deg,#df07f3b0, #07f3e7bd);
+        border-radius: 10px;
+        height: 40px;
+        color: #000000;
+        border: 0;
+    }
+    /*Caracteristicas del boton Nuevo Usuario*/
+    .btn1:hover{
+        background-color:  rgb(11, 71, 161);
+        height: 43px;
+        width: 153px;
+    }
+    /*Boton Ventas*/
+    .btnVentas{
+        margin-left: 1000px;
+        background: linear-gradient(135deg,#07f3e7bd, #df07f3b0);
+        border-radius: 8px;
+        height: 40px;
+        width: 150px;
+        color: #030303;
+        border: 0;
+    }
+    /*Caracterisitcas del boton Ventas*/
+    .btnVentas:hover{
+        background-color: rgb(11, 71, 161);
+        height: 43px;
+        width: 153px;
+    }
+    /*Boton de venta*/
+    .btnVentas1{
+        margin-top:10px ;
+        margin-left: 10px;
+        background: linear-gradient(135deg,#07f3e7bd, #df07f3b0);
+        border-radius: 8px;
+        height: 40px;
+        width: 150px;
+        color: #070707;
+        border: 0;
+    }
+    .btnVentas1:hover{
+        background-color: rgb(9, 98, 121);
+        height: 43px;
+        width: 153px;
+    
+    }
+    #precioTotal{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    /*Encabezado del formualrio de registro*/
+    .modal-header{
+        background: linear-gradient(135deg,#07f3e7bd, #df07f3b0);
+        color: #131313;
+    }
+    
+    .search-bar {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #searchInput {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
+    /*Boton de Editar y Enviar del form*/
+    .btn-primary {
+        border-radius: 0 5px 5px 0;
+        background: linear-gradient(135deg,#07f3e7bd, #df07f3b0);
+    }
+    .btn-primary:hover{
+        background-color: rgb(6, 76, 117);
+    }
+    /*Caract. del Formulario de registro*/
+    .modal-body form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+    }
+    
+    .modal-body form .imgholder{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+   
+
+    .upload i{
+        color: #fff;
+        font-size: 35px;
+    }
+    
+    .imgholder:hover .upload{
+        display: flex;
+    }
+    
+    .imgholder .upload input{
+        display: none;
+    }
+    /*Linea divisoria del formulario*/
+    .modal-body form .inputField{
+        flex-basis: 68%;
+        border-left: 4px groove rgb(162, 0, 255);
+        padding-left: 20px;
+    }
+    /*Formulario para ver Empleado*/
+    form .inputField > div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    /*Carac de los label del formulario*/
+    form .inputField > div label{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .row{
+        margin-top: 30px;
+    }
+    /*Asterisco*/
+    #userForm form .inputField > div label::after{
+        content: "*";
+        color: rgb(195, 0, 255);
+    }
+    /*Subrayado del forulario*/
+    form .inputField > div input{
+        width: 75%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid  rgb(162, 0, 255);
+    }
+    
+    .modal-footer .submit{
+        font-size: 18px;
+    }
+    
+    /*Letra del boton de Ver empleado */
+    #readData form .inputField > div input{
+        background: linear-gradient(135deg,#07f3e7bd, #df07f3b0);
+        font-size: 18px;
+        color:black;
+    }

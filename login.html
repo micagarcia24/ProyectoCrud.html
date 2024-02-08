@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="media/martin.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css">
+
+    <title id="titulo">Registro</title>
+</head>
+
+<body style="background: url('Imagenes/6758430.jpg') center/cover no-repeat fixed;">
+    <div class="container-form registrarte">
+        
+     
+<div class="informacion">
+            <div class="info_childs">
+                
+        
+                <h2>Bienvenido</h2>
+                <p> A Tiendida y descubre un mundo lleno de aprendizaje, creatividad y diversión para los más pequeños de la casa. ¡Te esperamos con los brazos abiertos! </p>
+                <input type="button" value="Iniciar sesión" id="login">
+                </div>
+               </div>
+              <div class="form-informacion">
+              <div class="form-informacion-childs">
+                
+        <h2>Crear una cuenta</h2>
+            <form class="formulario registro1">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Nombre completo" id="inputNombre" required>
+                    </label>
+                    
+     
+                      <label>
+                    <i class='bx bx-envelope'></i>                    
+                      <input type="email" placeholder="Correo electrónico" id="inputRegistroCorreo" required> 
+                          </label>
+
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña" id="inputRegistroContr"required>
+                        <!--<span class="password-toggle" onclick="togglePassword('inputRegistroContr')">Mostrar</span>-->
+                    </label>
+
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Confirmar Contraseña" id="inputConfirmContr" required>
+                       <!-- <span class="password-toggle" onclick="togglePassword('inputConfirmContr')">Mostrar</span>-->
+                    </label>
+                    
+                    <input type="submit" value="Registrarse" id="btnRegistro">
+                </form>
+            </div>
+        </div>
+    
+
+</div>
+
+    <div class="container-form loguearse hide">
+        <div class="informacion">
+            <div class="info_childs">
+                <h2>Bienvenido nuevamente</h2>
+                <p>Para acceder por favor ingrese sus datos para acceder</p>
+                <input type="button" value="Registrarse" id="registro">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-informacion-childs">
+                <h2>Iniciar sesión</h2>
+
+                <form class="formulario loguin2">
+
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Correo electrónico" id="lblCorreo">
+                    </label>
+
+                    <label>     
+                         <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña" id="lblContraseña">
+                    </label>
+                    <input type="submit" value="Iniciar sesión" id="btnloguearse">
+                
+ 
+</form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

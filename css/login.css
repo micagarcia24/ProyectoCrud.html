@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+    font-family: cursive;
+    
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(1, 22, 29);
+    }
+    /*Ambos cotenedores*/
+    .container-form{
+       max-width: 900px;
+       height: 500px;
+       display: flex;
+       border-radius: 20px;
+       box-shadow: 0 5px 7px rgb(0, 0,0,.1);
+       transition: all 1s ease;
+       margin: 10px;
+    }
+    /*Contenedor blanco de bienvenidos*/
+    .informacion{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f8f8f0;
+        border-top-left-radius: 140px;
+        border-bottom-left-radius: 20px;
+    
+    }
+    
+    .info_childs{
+        width: 100%;
+        padding: 0 30px;
+    
+    }
+    /*Titulo de bienvenido*/
+    .info_childs h2{
+        font-size: 2.5rem;
+        color:  #000000cf;
+    }
+    /*Parrafos de bienvenido*/
+    .info_childs p{
+        margin:  15px 0;
+        color:  #313131;
+    }
+    /* Boton de iniciar sesion*/
+    .info_childs input{
+    
+        background-color: transparent;
+        outline:  none;
+        border: solid 2px#1b1b1b;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color:  #292828;
+        cursor: pointer;
+        transition: background-color .3 ease ;
+    
+    }
+    /*Caracteristicas de Iniciar sesion*/
+    .info_childs input:hover{
+    background: linear-gradient(135deg, #df07f3b0,#ebfc04e0, #07f3e7bd);
+    border:  none;
+    color: #000;
+    box-shadow: 0 2px 5px rgb(0, 0,0,.1);
+    
+    }
+    /*Contenedor del formulario*/
+    .form-informacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        text-align: center;
+        background: linear-gradient(135deg, #df07f3b0,#ebfc04e0, #07f3e7bd,#ebfc04e0,#df07f3b0);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 140px;
+    }
+    .form-informacion-childs{
+        padding: 0 30px;
+    
+    }
+    /*Subtitulo Crear cuenta e Iniciar Sesion*/
+    .form-informacion-childs h2{
+        color:  #333;
+        font-size: 2rem;
+    }
+    
+    .iconos{
+        margin:  15px 0;
+    }
+    .iconos i{
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+        margin: 0 10px;
+        color:  #9191bd;
+        border:solid thin #9191bd;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgb(0, 0,0,.1);
+    }
+    .iconos i:hover{
+        background-color: #000 ;
+        columns: #fff;
+    }
+    .formulario{
+    
+        margin:  30px 0 0 0;
+    }
+    /*Recuadros del label*/
+    .formulario label{
+        display:  flex;
+        align-items:  center;
+        margin-bottom:  15px;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 0 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.918);
+    }
+    /*Escritura de los label*/
+    .formulario label input{
+        width: 100%;
+        padding:  10px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        color:  #333;
+    }
+    /*Iconos de los label*/
+    .formulario label i{
+        color: #a7a7a7;
+    }
+    /*Boton del Registrarse e Iniciar sesion */
+    .formulario input[type="submit"]
+    {
+        background-color: transparent;
+        color: #000;
+        border-radius: 20px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border: solid 2px#000;
+        margin-top: 10px;
+        box-shadow: 0 2px 5px rgb(0, 0,0,.1);
+    
+    }
+    /*Caracteristicas del boton registrarse e inicar sesion*/
+    .formulario input[type="submit"]:hover{
+    
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .hide{
+        position: absolute;
+        transform: translateY(-300%);
+    }
+    
+    @media screen and (max-width:750px) {
+        html{
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width:580px) {
+        html{
+            font-size: 10px;
+        }
+        .container-form{
+            height:  auto;
+            flex-direction: column;
+            
+        }
+        .informacion{
+            width: 100%;
+            padding: 20px;
+            border-top-right-radius: 20px;
+            border-top-left-radius:20px ;
+            border-bottom-left-radius:0px ;
+            border-bottom-right-radius: 0px;
+        }
+        .form-informacion{
+            width: 100%;
+            padding: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0px;
+        }
+    }
+    
